@@ -1,0 +1,25 @@
+{
+    "name": "Ubuntu 20.04 DevContainer with Nested Virt",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-vscode.vscode-node-azure-pack",
+        "vscoss.vscode-ansible"
+        // Add any other extensions you need
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "echo 'DevContainer setup complete!'",
+    "runArgs": [
+        "--privileged",
+        "--init"
+    ],
+    "remoteUser": "vscode",
+    "features": {
+        "docker-in-docker": true
+    }
+}
