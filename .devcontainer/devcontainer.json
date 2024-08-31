@@ -18,7 +18,7 @@
         "--privileged",
         "--init"
     ],
-    "remoteUser": "vscode",
+    "remoteUser": "root",
     "features": {
         "docker-in-docker": true
     }
